@@ -11,11 +11,15 @@ app.set('views','./views');
 app.engine('html',engines.mustache);
 app.set('view engine','html');
 
+app.use(express.static('../public'));
+
 const homeRouter = require('./routers/homeRouter');
+const loginAdmRouter = require('./routers/loginAdmRouter');
+
 
 app.use('/', homeRouter);
+app.use('/loginAdm', loginAdmRouter);
 
 
-
-//app.listen(3000);
+//app.listen(3001);
 exports.app = functions.https.onRequest(app);

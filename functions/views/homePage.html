@@ -1,14 +1,11 @@
 <!DOCTYPE html>
-<html lang="pt">
+<html lang="pt" >
   <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="theme-color" content="#fff"/>
-    <meta name="Description" content="Put your description here.">
-    <link rel="manifest" href="/manifest.json">
-    <title>Welcome to M'Burguer</title>
+    <div ng-include="'viewsPartials/head.html'"></div>
+    <link rel="stylesheet" type="text/css" href="/stylesheets/slide.css">
+    <title>Toxic Burguer</title>
   </head>
-  <body>
+  <body onload="showSlide()" ng-app="">
       <script>
         if('serviceWorker' in navigator){
           navigator.serviceWorker
@@ -16,7 +13,21 @@
               .then(()=>{console.log("ServiceWorker work")});
         }
       </script>
-    <div id="message">
-      <h2>Welcome2</h2>
+      <!-- Header beginning-->
+      <div ng-include="'viewsPartials/menu.html'"></div>
+
+      <!-- Header end-->	
+
+      <!-- Slide beginning -->
+      <div id="topo" class="conteinerSlide" ng-app="appSlide">
+        <div ng-include="'viewsPartials/slide.html'"></div>
+      </div>
+      <!-- Slide end-->
+
+      
+      <script src="/javascript/angular/angular.min.js"></script> 
+      <script src="/javascript/slide.js" type="text/javascript"></script>
+      <script src="/javascript/fullScreen.js" type="text/javascript"></script>
+      <script src="/javascript/linksuave.js" type="text/javascript"></script> 
   </body>
 </html>

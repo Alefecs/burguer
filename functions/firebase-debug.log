@@ -1,0 +1,17 @@
+[debug] [2018-11-03T04:43:22.426Z] ----------------------------------------------------------------------
+[debug] [2018-11-03T04:43:22.432Z] Command:       /usr/bin/node /home/icyseer/.npm-global/bin/firebase deploy
+[debug] [2018-11-03T04:43:22.433Z] CLI Version:   6.0.0
+[debug] [2018-11-03T04:43:22.433Z] Platform:      linux
+[debug] [2018-11-03T04:43:22.433Z] Node Version:  v8.10.0
+[debug] [2018-11-03T04:43:22.433Z] Time:          Sat Nov 03 2018 01:43:22 GMT-0300 (-03)
+[debug] [2018-11-03T04:43:22.434Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2018-11-03T04:43:22.458Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2018-11-03T04:43:22.458Z] > authorizing via signed-in user
+[debug] [2018-11-03T04:43:22.459Z] [iam] checking project mburguer-fe634 for permissions ["cloudfunctions.functions.create","cloudfunctions.functions.delete","cloudfunctions.functions.get","cloudfunctions.functions.list","cloudfunctions.functions.update","cloudfunctions.operations.get","firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2018-11-03T04:43:22.464Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/mburguer-fe634:testIamPermissions  
+
+[debug] [2018-11-03T04:43:24.519Z] <<< HTTP RESPONSE 200
+[debug] [2018-11-03T04:43:24.521Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/mburguer-fe634  
+ 
+[debug] [2018-11-03T04:43:25.855Z] <<< HTTP RESPONSE 200
